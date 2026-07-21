@@ -23,15 +23,30 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:background="#990A1A1A">
 
-        <TextView
-            android:id="@+id/statusText"
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="SYSTEM: ONLINE"
-            android:textColor="#00FF00"
-            android:textSize="12sp"
-            android:fontFamily="monospace" />
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/statusText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SYSTEM: ONLINE"
+                android:textColor="#00FF00"
+                android:textSize="12sp"
+                android:fontFamily="monospace" />
+
+            <TextView
+                android:id="@+id/azimuthText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AZIMUTH: 0°"
+                android:textColor="#8800FF00"
+                android:textSize="10sp"
+                android:fontFamily="monospace" />
+        </LinearLayout>
 
         <Spinner
             android:id="@+id/modeSpinner"
@@ -41,16 +56,15 @@
             android:backgroundTint="#00FF00"
             android:layout_marginEnd="12dp"/>
 
-        <Button
-            android:id="@+id/recalibrateButton"
-            android:layout_width="wrap_content"
+        <ImageButton
+            android:id="@+id/settingsButton"
+            android:layout_width="36dp"
             android:layout_height="36dp"
-            android:text="RECAL"
-            android:textSize="10sp"
-            android:backgroundTint="#004400"
-            android:textColor="#00FF00"
-            android:padding="0dp"
-            android:fontFamily="monospace" />
+            android:src="@android:drawable/ic_menu_manage"
+            android:background="#004400"
+            app:tint="#00FF00"
+            android:scaleType="centerInside"
+            android:contentDescription="Settings" />
 
     </LinearLayout>
 

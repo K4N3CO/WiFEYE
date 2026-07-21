@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">WifEYE</string>
+    <string name="calibrating_label">Baseline: %d%%</string>
+    <string name="scanner_online_label">TACTICAL SCANNER ACTIVE</string>
+    <string name="wifi_disabled_label">WiFi Disabled</string>
+    <string name="no_link_label">No Link...</string>
+    <string name="area_clear_label">AREA CLEAR</string>
+    <string name="motion_detected_label">!!! MOTION DETECTED !!!</string>
+    <string name="still_presence_label">STILL PRESENCE DETECTED</string>
+    <string name="error_permission_denied">Error: Location permission required.</string>
 </resources>
