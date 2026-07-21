@@ -1,4 +1,3 @@
-<p align="center">
 [![Wif-EYE-logo.png](https://i.postimg.cc/DyFMXQgF/Wif-EYE-logo.png)](https://postimg.cc/jCgcV7mk)
 
 # 📡 WifEYE
