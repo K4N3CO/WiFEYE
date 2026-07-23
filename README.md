@@ -1,7 +1,7 @@
 <p align="center">
 [![Wif-EYE-logo.png](https://i.postimg.cc/DyFMXQgF/Wif-EYE-logo.png)](https://postimg.cc/jCgcV7mk)
 
-# 📡 WifEYE (Advanced Performance Edition)
+# 📡 WifEYE (Extreme Performance Edition)
 > **Turn your smartphone into a tactical through-wall occupancy scanner.**
 
 ![Android](https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android)
@@ -14,17 +14,17 @@
 
 ## 🔥 Top-Tier Capabilities
 
-### 👁️ 1. Through-Wall Vision (60ft Range)
+### 👁️ Through-Wall Vision (60ft Range)
 "See" targets in adjacent rooms. Our advanced physics engine compensates for material density (drywall, brick, wood), correctly localizing targets on your tactical floor plan even through solid obstructions at extended distances.
 
-### 🧠 2. Advanced Signal Hardening
+### 🧠 Advanced Signal Hardening
 Zero false positives. Our hardened signal pipeline uses multi-stage filtering (High-Confidence CUSUM & Dual-EMA) to ignore environmental noise, ensuring you only track real human activity.
 
-### 🧘 3. Stationary Target Detection
+### 🧘 Stationary Target Detection
 Standard motion sensors fail when a target stops moving. **WifEYE doesn't**. We monitor baseline **field shifts to **identify stationary occupants**, keeping them **locked on your HUD** even if they're sitting perfectly still.
 
-### 🖥️ 4. Tactical HUD 2.0 (Ultra-Responsive)
- **military-grade**, hardware-accelerated visualizer featuring:
+### 🖥️ Tactical HUD 2.0 (Ultra-Responsive)
+A military-grade, hardware-accelerated visualizer featuring:
 *   **Holographic Humanoids**: 3D volumetric models with joints, tactical eyes, and motion scanlines.
 *   **Motion Echoes**: Professional-grade tracking trails that visualize target velocity and path.
 *   **Atmospheric Depth Fade**: High-fidelity 3D floor plan with volumetric horizon fading.
@@ -43,7 +43,7 @@ Standard motion sensors fail when a target stops moving. **WifEYE doesn't**. We 
 
 ## 🛠️ The Tech Stack
 
-**WifEYE bridges** the gap between **basic Wi-Fi data** and **professional-grade sensing**:
+WifEYE bridges the gap between basic Wi-Fi data and professional-grade sensing:
 
 1.  **Raw Sensing**: High-speed, 75ms hardware polling for balanced, ultra-low latency tracking.
 2.  **Logic Engine**: Advanced statistical analysis (Welford's Algorithm) and frequency-band energy mapping.
@@ -53,7 +53,7 @@ Standard motion sensors fail when a target stops moving. **WifEYE doesn't**. We 
 
 ## 🔬 The "Magic" (Heuristic Inference)
 
-How do we do the **"impossible"** on standard hardware? **WifEYE** uses **Heuristic Modeling** to translate **raw signal energy** into **human-readable tactical data**:
+How do we do the "impossible" on standard hardware? WifEYE uses **Heuristic Modeling** to translate raw signal energy into human-readable tactical data:
 
 *   **Pose Approximation**: We map signal energy directly to skeletal movement—moderate, deliberate limb swings for realistic target gait.
 *   **Biometric Sync**: We map signal variance onto biological BPM ranges, providing intuitive visual health-status indicators.
@@ -70,7 +70,7 @@ WifEYE serves as the flagship Android implementation for the sensing challenges 
 ## 🚀 Deployment
 
 1.  **Sideload**: Grab the latest `.apk` from the [Releases](https://github.com/youruser/WifEYE/releases) section.
-2.  **Calibrate**: Tap **RECALIBRATE** in an empty room *(takes **40 samples** / ~3 seconds)* to lock the EM baseline.
+2.  **Calibrate**: Tap **RECALIBRATE** in an empty room (takes **40 samples** / ~3 seconds) to lock the EM baseline.
 3.  **Scan**: Open the HUD and begin monitoring your environment.
 
 ---
