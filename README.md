@@ -45,27 +45,12 @@
 ## 🏗️ System Architecture
 
 ```mermaid
-graph TD
-    A[Ambient RF & Wi-Fi Access Point] -->|High-Frequency Polling 75ms| B[Android WifiManager RSSI Data]
-    B --> C[Signal Hardening Kernel]
-    
-    subgraph C [Signal Hardening Kernel]
-        C1[Exponential Moving Average Smoothing] --> C2[Dual-EMA Band-Pass Spectral Filter]
-        C2 --> C3[Welford's Rolling Variance Window]
-        C3 --> C4[CUSUM Change Detection Engine]
-    end
-
-    C4 --> D[Finite State Machine - FSM]
-    
-    subgraph D [Target State Resolver]
-        D1[ABSENT - Baseline Noise]
-        D2[PRESENT_STILL - Static Body Shift]
-        D3[ACTIVE - Kinetic Target Motion]
-    end
-    
-    D --> E[Spatial & Distance Correction Model]
-    E --> F[SignalVisualizerView - 60 FPS Canvas HUD]
-    F --> G[Geiger Audio Feed & Haptic Feedback]
+graph LR
+    A["📡 RF / Wi-Fi"] -->|75ms Polling| B["📱 WifiManager"]
+    B --> C["🧠 Signal Kernel<br/><i>EMA • Dual-EMA • Welford • CUSUM</i>"]
+    C --> D["🎯 FSM State Resolver<br/><i>ABSENT • STILL • ACTIVE</i>"]
+    D --> E["📐 Distance Model"]
+    E --> F["🖥️ 60 FPS Canvas HUD"]
 ```
 
 ---
