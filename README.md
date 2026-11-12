@@ -26,7 +26,7 @@
 - [Operational Modes](#-operational-modes)
 - [Mathematical & Physics Engine](#-mathematical--physics-engine)
 - [Hardware-Accelerated HUD Visualizer](#-hardware-accelerated-hud-visualizer)
-- [Getting Started & Installation](#-getting-started--installation)
+- [Quick Start & Installation](#-quick-start--installation)
 - [Tactical Operating Guide](#-tactical-operating-guide)
 - [RuView Specification (Issue #36)](#-ruview-specification-issue-36)
 - [License & Disclaimer](#-license--disclaimer)
@@ -187,25 +187,39 @@ $$\sigma^2_t = \frac{M_{2, t}}{N}$$
 
 ---
 
-## 🚀 Getting Started & Installation
+## 🚀 Quick Start & Installation
 
-### Prerequisites
-1. Android smartphone running **Android 12 (API 31)** or newer.
-2. Active Wi-Fi hardware enabled on the device and connected to an AP (or receiving ambient Wi-Fi beacons).
-3. **Location Access Permission** (`ACCESS_FINE_LOCATION`) granted (required by Android OS for Wi-Fi RSSI hardware telemetry access).
+> [!TIP]
+> **Ready-to-install APK available!** You can download and install the latest compiled release directly on your Android device without building from source.
 
-### Quick Install
+### 📲 Option 1: Download Pre-Built APK (Recommended)
+
+1. **Download APK**: Grab the latest `.apk` package from the **[GitHub Releases Page](https://github.com/K4N3CO/WiFEYE/releases)**.
+2. **Install**: Open the downloaded `.apk` file on your device and confirm installation (allow installation from unknown sources if prompted).
+3. **Grant Permissions**: Open **WifEYE** and grant **Location (`ACCESS_FINE_LOCATION`)** permission when prompted (mandatory by Android OS for accessing Wi-Fi hardware RSSI telemetry).
+
+[![Download APK](https://img.shields.io/badge/Download-Latest_APK-0055FF?style=for-the-badge&logo=android&logoColor=white)](https://github.com/K4N3CO/WiFEYE/releases)
+
+---
+
+### 🛠️ Option 2: Build From Source (Developers)
+
+#### Prerequisites
+- **Android Studio** (Ladybug / 2024.2.1+ or newer)
+- **JDK 17** or **JDK 21**
+- Android SDK 36 (Build Tools 36.0.0)
 
 ```bash
-# Clone the repository
+# 1. Clone the repository
 git clone https://github.com/K4N3CO/WiFEYE.git
-
-# Open in Android Studio or build APK via Gradle wrapper
 cd WiFEYE
-./gradlew assembleRelease
-```
 
-Direct APK releases are also available on the **[GitHub Releases Page](https://github.com/K4N3CO/WiFEYE/releases)**.
+# 2. Build Debug or Release APK using Gradle
+./gradlew assembleRelease
+
+# 3. Install directly to a connected Android device via ADB
+adb install app/build/outputs/apk/release/app-release-unsigned.apk
+```
 
 ---
 
