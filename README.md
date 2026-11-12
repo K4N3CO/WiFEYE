@@ -150,6 +150,11 @@ $$\sigma^2_t = \frac{M_{2, t}}{N}$$
 - **Motion Echo Trails**: 5-stage velocity tail rendering indicating directional vector history.
 - **Volumetric Sweep Sector**: Rotating radar sector blade with distance marker rings (10ft, 20ft, 30ft, 45ft, 60ft).
 - **Dual-Channel Live Telemetry**: Live graphical plot overlaying raw RSSI (cyan) against variance energy (yellow).
+<details>
+  <summary><b>📸 Click to View App Screenshots</summary></b>
+  <img src="https://github.com/user-attachments/assets/1e5c0f18-b1f5-4840-abf3-b640da57c426" alt="Full Web Page Screenshot" width="30%">
+  <img src="https://github.com/user-attachments/assets/bbe5e9cd-4360-40ff-93c7-f1c9bc8e5c12" alt="Full Web Page Screenshot" width="30%" />
+</details>
 
 ---
 
