@@ -44,14 +44,7 @@
 
 ## 🏗️ System Architecture
 
-```mermaid
-graph LR
-    A["📡 RF / Wi-Fi"] -->|75ms Polling| B["📱 WifiManager"]
-    B --> C["🧠 Signal Kernel<br/><i>EMA • Dual-EMA • Welford • CUSUM</i>"]
-    C --> D["🎯 FSM State Resolver<br/><i>ABSENT • STILL • ACTIVE</i>"]
-    D --> E["📐 Distance Model"]
-    E --> F["🖥️ 60 FPS Canvas HUD"]
-```
+<img width="1132" height="177" alt="Screenshot 2026-11-12 at 1 04 12 AM" src="https://github.com/user-attachments/assets/06b1d2dd-1ab6-4717-baf6-073fd51e4d87" />
 
 ---
 
