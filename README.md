@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/K4N3CO/WiFEYE">
-    <img src="https://i.postimg.cc/DyFMXQgF/Wif-EYE-logo.png" alt="WifEYE Logo" width="640"/>
+    <img src="https://i.postimg.cc/DyFMXQgF/Wif-EYE-logo.png" alt="WifEYE Logo" width="940"/>
   </a>
 </p>
 
@@ -50,26 +50,26 @@
 
 ## ⚡ Key Features
 
-- 👁️ **Through-Wall Penetration (Up to 60ft)**  
-  Performs spatial localization through drywall, timber, and brick barriers by applying dynamic path-loss exponent compensation ($n = 2.2 \text{ to } 3.2$).
+### 👁️ Through-Wall Penetration (Up to 60ft)
+Performs spatial localization through drywall, timber, and brick barriers by applying dynamic path-loss exponent compensation ($n = 2.2 \text{ to } 3.2$).
 
-- 🧠 **Hardened Noise Suppression & Zero False Positives**  
-  Combines **Welford's Algorithm** for real-time variance tracking, **CUSUM** sequential analysis for detection thresholds, and **Dual-EMA Band-Pass Filtering** to isolate human motion frequencies (0.5–3.0 Hz) while discarding static RF interference.
+### 🧠 Hardened Noise Suppression & Zero False Positives 
+Combines **Welford's Algorithm** for real-time variance tracking, **CUSUM** sequential analysis for detection thresholds, and **Dual-EMA Band-Pass Filtering** to isolate human motion frequencies (0.5–3.0 Hz) while discarding static RF interference.
 
-- 🧘 **Static Presence & Micro-Movement Lock**  
-  Unlike traditional Doppler radars that drop targets when movement ceases, WifEYE detects subtle phase shifts in ambient RSSI baseline (`PRESENT_STILL`), maintaining active lock on sitting or stationary targets.
+### 🧘 Static Presence & Micro-Movement Lock 
+Unlike traditional Doppler radars that drop targets when movement ceases, WifEYE detects subtle phase shifts in ambient RSSI baseline (`PRESENT_STILL`), maintaining active lock on sitting or stationary targets.
 
-- 🖥️ **Tactical HUD 2.0 (Zero-Allocation Graphics)**  
-  High-speed custom Canvas visualizer featuring holographic humanoids, skeletal joint kinematics, motion vector echoes, sweeping radar sector beam, real-time dual-channel signal telemetry graphs, and interactive event logs.
+### 🖥️ Tactical HUD 2.0 (Zero-Allocation Graphics)
+High-speed custom Canvas visualizer featuring holographic humanoids, skeletal joint kinematics, motion vector echoes, sweeping radar sector beam, real-time dual-channel signal telemetry graphs, and interactive event logs.
 
-- 🔊 **Multi-Sensory Feedback**  
-  Geiger-mode audio click generator mapped to signal variance intensity and tactical haptic pulses upon target acquisition.
+### 🔊 Multi-Sensory Feedback 
+Geiger-mode audio click generator mapped to signal variance intensity and tactical haptic pulses upon target acquisition.
 
 ---
 
 ## 🎛️ Operational Modes
 
-WifEYE provides three pre-tuned mission profiles selectable directly from the tactical UI:
+**WifEYE** provides three pre-tuned mission profiles selectable directly from the tactical UI:
 
 | Profile | Sensitivity ($h$) | Slack ($k$) | Path Loss ($n$) | Primary Deployment Scenario |
 | :--- | :---: | :---: | :---: | :--- |
@@ -81,7 +81,7 @@ WifEYE provides three pre-tuned mission profiles selectable directly from the ta
 
 ## 🔬 Mathematical & Physics Engine
 
-WifEYE translates raw RF power fluctuations ($\text{dBm}$) into physical spatial telemetry through a multi-stage statistical kernel:
+**WifEYE** translates raw RF power fluctuations ($\text{dBm}$) into physical spatial telemetry through a multi-stage statistical kernel:
 
 ### 1. Log-Distance Path Loss Model (Spatial Distance)
 Calculates real-time distance ($d$) to target based on signal attenuation relative to 1-meter reference power ($\text{RSSI}_{1\text{m}} = -32 \text{ dBm}$):
@@ -137,8 +137,8 @@ $$\sigma^2_t = \frac{M_{2, t}}{N}$$
 | ACCURACY:  94%         | > BASELINE_LOCKED     | RSSI LINK: -48 dBm     |
 | DISTANCE:  14.2 FT     | > TARGET_ACTIVE       | VARIANCE:   1.248      |
 | 74 BPM / 14 RPM        | > SIG_VERIFY_8F4A     | INTENSITY:  1.650      |
-| [ECG PULSE WAVEFORM]   | [SCROLLABLE LOG BOX]  | [DUAL TELEMETRY GRAPH] |
-| [ RECALIBRATE ]        |                       | [ SCAN: MOTION DETECTED] |
+| [ECG PULSE WAVEFORM]   | [SCROLLABLE LOG BOX]  |[DUAL TELEMETRY GRAPH]  |
+| [ RECALIBRATE ]        |                       |[ SCAN: MOTION DETECTED]|
 +-------------------------------------------------------------------------+
 |                          3D PERSPECTIVE FLOOR GRID                      |
 |                  (Volumetric Wedge / Holographic Humanoid)              |
@@ -165,10 +165,7 @@ $$\sigma^2_t = \frac{M_{2, t}}{N}$$
 
 ---
 
-## 🚀 Quick Start & Installation
-
-> [!TIP]
-> **Ready-to-install APK available!** You can download and install the latest compiled release directly on your Android device without building from source.
+## 🚀 Quick Start & Installation Options
 
 ### 📲 Option 1: Download Pre-Built APK (Recommended)
 
@@ -204,9 +201,9 @@ adb install app/build/outputs/apk/release/app-release-unsigned.apk
 ## 🎯 Tactical Operating Guide
 
 > [!TIP]
-> **Calibration Best Practice**: Always calibrate WifEYE in an empty room or when targets are motionless for at least 3 seconds.
+> **Calibration Best Practice**: Always calibrate **WifEYE** in an empty room or when targets are motionless for at least 3 seconds.
 
-1. **Launch App**: Open WifEYE and allow location permissions if prompted.
+1. **Launch App**: Open **WifEYE** and allow location permissions if prompted.
 2. **Environment Baseline Lock**: Tap the **RECALIBRATE** button on the bottom left HUD panel. Wait for 40 samples (~3 seconds) while the status shows `CALIBRATING...`.
 3. **Select Mode**: Use the drop-down menu in the bottom control bar to switch between **Auto**, **Through-Wall**, and **Multi-Person** modes.
 4. **Tactical Override Settings**: Tap the **Settings (Gear Icon)** to customize:
@@ -219,7 +216,7 @@ adb install app/build/outputs/apk/release/app-release-unsigned.apk
 
 ## 🏛️ RuView Specification (Issue #36)
 
-WifEYE serves as the reference Android implementation for sensing objectives specified in **[RuView Issue #36](https://github.com/ruvnet/RuView/issues/36)**:
+**WifEYE** serves as the reference Android implementation for sensing objectives specified in **[RuView Issue #36](https://github.com/ruvnet/RuView/issues/36)**:
 
 - **Pose Approximation**: Energy-to-skeleton mapping for humanoid gait visualization.
 - **Biometric Sync**: Variance-to-vital mapping (heart rate BPM / respiration RPM estimation).
@@ -251,5 +248,5 @@ copies or substantial portions of the Software.
 ---
 
 <p align="center">
-  Developed with ❤️ by <a href="https://github.com/K4N3CO">K4N3CO</a>
+  Developed by <a href="https://github.com/K4N3CO">K4N3CO</a>
 </p>
